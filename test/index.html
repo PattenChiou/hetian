@@ -1,26 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>My test page</title>
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-    <h1>Mozilla is cool</h1>
-    <img src="images/firefox-icon.png" alt="The Firefox logo: a flaming fox surrounding the Earth.">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;font-size:25px; }
+* {box-sizing: border-box;}
 
-    <p>At Mozilla, we’re a global community of</p>
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 
-    <ul> <!-- changed to list in the tutorial -->
-      <li>technologists</li>
-      <li>thinkers</li>
-      <li>builders</li>
-    </ul>
+}
 
-    <p>working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
-    <p>Read the <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a> to learn even more about the values and principles that guide the pursuit of our mission.</p>
-    <script type="text/javascript" src="scripts/main.js"></script>
-  </body>
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3>Contact Form</h3>
+
+<div class="container">
+  <form action="#" method="post" name="google">
+    <label for="fname">名字</label>
+    <input style="font-size:25px;color:blue;" type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">姓</label>
+    <input style="font-size:25px;color:blue;" type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">國家</label>
+    <select id="country" name="country">
+        <option style="font-size:25px;color:blue;" value="taiwan">Taiwan</option>
+      <option style="font-size:25px;color:blue;" value="australia">Australia</option>
+      <option style="font-size:25px;color:blue;" value="canada">Canada</option>
+      <option style="font-size:25px;color:blue;" value="usa">USA</option>
+    </select>
+
+    <label for="subject">主題</label>
+    <textarea style="font-size:25px;color:blue;" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit" name="submit">
+  </form>
+</div>
+
+    <script type="text/javascript">
+        const scriptURL='https://script.google.com/macros/s/AKfycbxRGlLG5yd0ZkvdskDlOHTEeje95PE0BoZavjuf_J1dZjFoFfrAVq_YZsVkDTArixSp/exec'
+
+        const form = document.forms['google']
+          
+          form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+              .then(response => alert("上傳成功！！！"))
+              .catch(error => console.error('Error!', error.message))
+          })
+
+    </script>
+
+</body>
 </html>
