@@ -2,6 +2,7 @@
     <head>
         <title>購買</title>
         <link href="purchase_style.css" rel="stylesheet">
+        <script src="jquery-3.6.3.js"></script>
     </head>
     <body>
         <div id="header">
@@ -30,14 +31,20 @@
         <form action="#" method="post" name="purchase">
             <div id="form_content_1">
                 <label>品名</label>
-                <input type="text" id="product_name" name="product_name">
+                <select id="product_name" name="product_name">
+                    <option value="肉片">肉片</option>
+                </select>
             </div>
             <div id="form_content_2">
                 <label>數量</label>
                 <input type="text" id="quantity" name="quantity">
             </div>
+            <div id="form_content_4">
+                <label>總價</label>
+                <input type="text "id="total" name="total" value="">
+            </div>
             <div id="form_content_3">
-                <input type="submit" value="Submit" name="submit">
+                <input type="button" id="submit" value="Submit" name="submit">
             </div>
         </form>
         <div class="bottom">
