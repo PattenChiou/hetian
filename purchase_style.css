@@ -52,6 +52,7 @@ form{
     grid-row-end: 2;
     justify-content: center;
     align-items: center;
+    margin-right: 10px;
 }
 #form_content_2{
     display: flex;
@@ -60,6 +61,15 @@ form{
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+    justify-content: center;
+    align-items: center;
+}
+#form_line_1{
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
     justify-content: center;
     align-items: center;
 }
