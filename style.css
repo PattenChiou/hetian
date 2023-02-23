@@ -8,6 +8,10 @@
     position: sticky;
     top: 0;
 }
+body{
+    background-image: url("./asset/305484008_565033565419882_5034076824293787729_n.jpeg");
+    background-position: center;
+}
 .icon{
     display: flex;
     flex-grow: 1;
@@ -24,6 +28,7 @@
     height: 1100px;
     grid-template-columns: [column_1] 1fr [column_2] 5fr [column_3] 1fr [column_4];
     grid-template-rows: [row_1] 100px [row_2] 600px [row_3] 300px [row_4] 100px [row_5];
+    background-color: transparent;
 }
 #about_us_content_1{
     display: flex;
