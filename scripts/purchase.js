@@ -4,7 +4,7 @@ $("#submit").click(function (e){
     e.preventDefault();
     fetch(scriptURL,{method: "POST",body: new FormData(form)})
     .then(response => alert("You have successfully submitted."))
-    .catch(error => console.error("Error!", error.message))
+    .catch(error => console.error("Error!", error.message));
   }
 )
 
