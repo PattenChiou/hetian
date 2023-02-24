@@ -17,14 +17,25 @@ $("#submit").click(function (e){
               .catch(error => console.error('Error!', error.message))
           })*/
 
-let price = {"sliced_meat":200, "item2":100, "item3":100};
-input_total = $("#total");
-sliced_meat = $("#sliced_meat");
-item2 = $("#item2");
-item3 = $("#item3");
-product_name = $("#product_name");
-function setTotal(){
-  input_total.val(String(price["sliced_meat"] * sliced_meat.val() + price["item2"] * item2.val() + price["item3"] * item3.val()));
+let price = {"H1":300, "H2":720, "H3":720, "H4":280, "H5":900, "H6":360, "H7":120};
+total = $("#total_input");
+H1 = $("#H1_select");
+H2 = $("#H2_select");
+H3 = $("#H3_select");
+H4 = $("#H4_select");
+H5 = $("#H5_select");
+H6 = $("#H6_select");
+H7 = $("#H7_select");
+function calTotal(){
+  total.val(String(
+                    price["H1"] * H1.val() 
+                  + price["H2"] * H2.val() 
+                  + price["H3"] * H3.val()
+                  + price["H4"] * H4.val()
+                  + price["H5"] * H5.val()
+                  + price["H6"] * H6.val()
+                  + price["H7"] * H7.val())
+  );
   //("總價:" + String(quantity.val()*price[product_name.val()]))
 }
-setInterval(setTotal,100);
+setInterval(calTotal,100);
