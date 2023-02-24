@@ -17,12 +17,14 @@ $("#submit").click(function (e){
               .catch(error => console.error('Error!', error.message))
           })*/
 
-let price = {"肉片":200};
+let price = {"sliced_meat":200, "item2":100, "item3":100};
 input_total = $("#total");
-quantity = $("#quantity");
+sliced_meat = $("#sliced_meat");
+item2 = $("#item2");
+item3 = $("#item3");
 product_name = $("#product_name");
 function setTotal(){
-  input_total.val(String(quantity.val()*price[product_name.val()]));
+  input_total.val(String(price["sliced_meat"] * sliced_meat.val() + price["item2"] * item2.val() + price["item3"] * item3.val()));
   //("總價:" + String(quantity.val()*price[product_name.val()]))
 }
 setInterval(setTotal,100);
