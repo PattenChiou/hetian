@@ -21,30 +21,132 @@ body{
     flex-grow: 4;
 }
 
-.bottom{
-    background-color: gray;
-    width: calc(100%);
-    height: 200px;
-}
-#bottom_about{
-    color: lightblue;
-    padding-top: 10px;
-    padding-left: 10px;
-    font-size: 30;
-}
-#bottom_content{
-    color: blue;
-    font-size: 16;
-    padding-top: 10px;
-    padding-left: 10px;
+#purchase{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: [column_1] 1fr [column_2] 5fr [column_3] 1fr [column_4];
+    grid-template-rows: [row_1] 2fr [row_2] 5fr [row_3] 2.5fr [row_4];
 }
 form{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3; 
     display: grid;
     /*background-color: red;*/
-    width: calc(100%);
-    height: 600px;
+    width: 100%;
+    height: 100%;
     grid-template-columns: [column_1] 1fr [column_2] 3fr [column_3] 3fr [column_4] 1fr [column_5];
     grid-template-rows: [row_1] 100px [row_2] 50px [row_3] 50px [row_4] 50px [row_5] 50px [row_6] 50px [row_7] 50px [row_8] 50px [row_9] 50px [row_10] 50px [row_11];
+}
+#form_title{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    font-size: 30;
+}
+#email{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: [column_1] 1fr [column_2] 1fr [column_3];
+    grid-template-rows: [row_1] 1fr [row_2];
+    justify-items: center;
+    align-items: center;
+}
+#email_label{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: start;
+}
+#email_input{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: stretch;
+}
+#name{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: grid;
+    grid-template-columns: [column_1] 1fr [column_2] 1fr [column_3];
+    grid-template-rows: [row_1] 1fr [row_2];
+    justify-content: center;
+    align-items: center;
+}
+#name_label{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: start;
+}
+#name_input{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: stretch;
+}
+#contact{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    display: grid;
+    grid-template-columns: [column_1] 1fr [column_2] 1fr [column_3];
+    grid-template-rows: [row_1] 1fr [row_2];
+    justify-content: center;
+    align-items: center;
+}
+#contact_label{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: start;
+}
+#contact_input{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: stretch;
+}
+#address{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    display: grid;
+    grid-template-columns: [column_1] 1fr [column_2] 1fr [column_3];
+    grid-template-rows: [row_1] 1fr [row_2];
+    justify-items: center;
+    align-items: center;
+}
+#address_label{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: start;
+}
+#address_input{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: stretch;
 }
 #H1{
     /*background-color: green;*/
@@ -298,111 +400,24 @@ form{
 .gap_50{
     width: 50px;
 }
-#form_title{
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    text-align: center;
-    font-size: 30;
-}
-#email{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    display: grid;
-    grid-template-columns: [column_1] 1fr [column_2] 1fr [column_3];
-    grid-template-rows: [row_1] 1fr [row_2];
-    justify-items: center;
-    align-items: center;
-}
-#email_label{
+.bottom{
+    height: 100%;
+    width: 100%;
     grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    justify-self: start;
-}
-#email_input{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    justify-self: stretch;
-}
-#name{
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
-    display: grid;
-    grid-template-columns: [column_1] 1fr [column_2] 1fr [column_3];
-    grid-template-rows: [row_1] 1fr [row_2];
-    justify-content: center;
-    align-items: center;
+    background-color: gray;
 }
-#name_label{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    justify-self: start;
+#bottom_about{
+    color: lightblue;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 30;
 }
-#name_input{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    justify-self: stretch;
-}
-#contact{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    display: grid;
-    grid-template-columns: [column_1] 1fr [column_2] 1fr [column_3];
-    grid-template-rows: [row_1] 1fr [row_2];
-    justify-content: center;
-    align-items: center;
-}
-#contact_label{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    justify-self: start;
-}
-#contact_input{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    justify-self: stretch;
-}
-#address{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 5;
-    grid-row-end: 6;
-    display: grid;
-    grid-template-columns: [column_1] 1fr [column_2] 1fr [column_3];
-    grid-template-rows: [row_1] 1fr [row_2];
-    justify-items: center;
-    align-items: center;
-}
-#address_label{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    justify-self: start;
-}
-#address_input{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    justify-self: stretch;
+#bottom_content{
+    color: blue;
+    font-size: 16;
+    padding-top: 10px;
+    padding-left: 10px;
 }
