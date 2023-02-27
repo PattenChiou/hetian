@@ -34,7 +34,7 @@ body{
     width: 100%;
     height: 100%;
     grid-template-columns: [column_1] 1fr [column_2] 5fr [column_3] 1fr [column_4];
-    grid-template-rows: [row_1] 1fr [row_2] 1fr [row_3] 2fr [row_4];
+    grid-template-rows: [row_1] 1fr [row_2] 1fr [row_3] 1fr [row_4];
 }
 #introduction_content_1{
     display: flex;
