@@ -46,7 +46,7 @@ form{
     width: 100%;
     height: 100%;
     grid-template-columns: [column_1] 1fr [column_2] 5fr [column_3] 5fr [column_4] 1fr [column_5];
-    grid-template-rows: [row_1] 100px [row_2] 50px [row_3] 50px [row_4] 50px [row_5] 50px [row_6] 50px [row_7] 50px [row_8] 50px [row_9] 50px [row_10] 50px [row_11];
+    grid-template-rows: [row_1] 2fr [row_2] 1fr [row_3] 1fr [row_4] 1fr [row_5] 1fr [row_6] 1fr [row_7] 1fr [row_8] 1fr [row_9] 1fr [row_10] 1fr [row_11];
 }
 #form_title{
     grid-column-start: 2;
