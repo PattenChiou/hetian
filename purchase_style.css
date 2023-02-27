@@ -1,6 +1,6 @@
 html{
     width: 100%;
-    height: 150%;
+    height: 200%;
     max-height: 300%;
 }
 #header{
@@ -20,9 +20,14 @@ body{
 }
 .icon{
     display: flex;
+    height: 100%;
     flex-grow: 1;
     justify-content: center;
     align-items: center;
+}
+.icon img{
+    height: 100%;
+    width: 100%;
 }
 .index{
     flex-grow: 4;
@@ -34,7 +39,10 @@ body{
     height: 100%;
     display: grid;
     grid-template-columns: [column_1] 1fr [column_2] 10fr [column_3] 1fr [column_4];
-    grid-template-rows: [row_1] 1fr [row_2] 5fr [row_3] 1fr [row_4];
+    grid-template-rows: [row_1] 1fr [row_2] 3fr [row_3] 1fr [row_4];
+    justify-content: center;
+    align-items: center;
+    /*background-color: red;*/
 }
 form{
     grid-column-start: 2;
@@ -45,20 +53,20 @@ form{
     /*background-color: red;*/
     width: 100%;
     height: 100%;
-    grid-template-columns: [column_1] 1fr [column_2] 5fr [column_3] 5fr [column_4] 1fr [column_5];
+    grid-template-columns: [column_1] 1fr [column_2] 1fr [column_3];
     grid-template-rows: [row_1] 2fr [row_2] 1fr [row_3] 1fr [row_4] 1fr [row_5] 1fr [row_6] 1fr [row_7] 1fr [row_8] 1fr [row_9] 1fr [row_10] 1fr [row_11];
 }
 #form_title{
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
     text-align: center;
-    font-size: 30;
+    font-size: 10vmin;
 }
 #email{
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
     display: grid;
@@ -73,6 +81,7 @@ form{
     grid-row-start: 1;
     grid-row-end: 2;
     justify-self: start;
+    font-size: 2.5vmin;
 }
 #email_input{
     grid-column-start: 2;
@@ -80,10 +89,11 @@ form{
     grid-row-start: 1;
     grid-row-end: 2;
     justify-self: stretch;
+    font-size: 2.5vmin;
 }
 #name{
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
     display: grid;
@@ -98,6 +108,7 @@ form{
     grid-row-start: 1;
     grid-row-end: 2;
     justify-self: start;
+    font-size: 2.5vmin;
 }
 #name_input{
     grid-column-start: 2;
@@ -105,10 +116,11 @@ form{
     grid-row-start: 1;
     grid-row-end: 2;
     justify-self: stretch;
+    font-size: 2.5vmin;
 }
 #contact{
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 5;
     display: grid;
@@ -123,6 +135,7 @@ form{
     grid-row-start: 1;
     grid-row-end: 2;
     justify-self: start;
+    font-size: 2.5vmin;
 }
 #contact_input{
     grid-column-start: 2;
@@ -130,10 +143,11 @@ form{
     grid-row-start: 1;
     grid-row-end: 2;
     justify-self: stretch;
+    font-size: 2.5vmin;
 }
 #address{
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
     grid-row-start: 5;
     grid-row-end: 6;
     display: grid;
@@ -148,6 +162,7 @@ form{
     grid-row-start: 1;
     grid-row-end: 2;
     justify-self: start;
+    font-size: 2.5vmin;
 }
 #address_input{
     grid-column-start: 2;
@@ -155,11 +170,12 @@ form{
     grid-row-start: 1;
     grid-row-end: 2;
     justify-self: stretch;
+    font-size: 2.5vmin;
 }
 #H1{
     /*background-color: green;*/
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
     display: grid;
@@ -177,6 +193,7 @@ form{
     grid-row-end: 2;
     text-align: center;
     justify-self: start;
+    font-size: 2.5vmin;
 }
 #H1_select{
     grid-column-start: 2;
@@ -184,11 +201,12 @@ form{
     grid-row-start: 1;
     grid-row-end: 2;
     justify-self: stretch;
+    font-size: 2.5vmin;
 }
 #H2{
     /*background-color: green;*/
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
     display: grid;
@@ -206,6 +224,7 @@ form{
     grid-row-end: 2;
     text-align: center;
     justify-self: start;
+    font-size: 2.5vmin;
 }
 #H2_select{
     grid-column-start: 2;
@@ -213,6 +232,7 @@ form{
     grid-row-start: 1;
     grid-row-end: 2;
     justify-self: stretch;
+    font-size: 2.5vmin;
 }
 /*#form_line_1{
     display: flex;
@@ -225,8 +245,8 @@ form{
 }*/
 #H3{
     /*background-color: green;*/
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
     display: grid;
@@ -244,6 +264,7 @@ form{
     grid-row-end: 2;
     text-align: center;
     justify-self: start;
+    font-size: 2.5vmin;
 }
 #H3_select{
     grid-column-start: 2;
@@ -251,10 +272,11 @@ form{
     grid-row-start: 1;
     grid-row-end: 2;
     justify-self: stretch;
+    font-size: 2.5vmin;
 }
 #H4{
     /*background-color: green;*/
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 5;
     grid-row-end: 6;
@@ -273,6 +295,7 @@ form{
     grid-row-end: 2;
     text-align: center;
     justify-self: start;
+    font-size: 2.5vmin;
 }
 #H4_select{
     grid-column-start: 2;
@@ -280,11 +303,12 @@ form{
     grid-row-start: 1;
     grid-row-end: 2;
     justify-self: stretch;
+    font-size: 2.5vmin;
 }
 #H5{
     /*background-color: green;*/
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row-start: 6;
     grid-row-end: 7;
     display: grid;
@@ -302,6 +326,7 @@ form{
     grid-row-end: 2;
     text-align: center;
     justify-self: start;
+    font-size: 2.5vmin;
 }
 #H5_select{
     grid-column-start: 2;
@@ -309,11 +334,12 @@ form{
     grid-row-start: 1;
     grid-row-end: 2;
     justify-self: stretch;
+    font-size: 2.5vmin;
 }
 #H6{
     /*background-color: green;*/
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row-start: 7;
     grid-row-end: 8;
     display: grid;
@@ -331,6 +357,7 @@ form{
     grid-row-end: 2;
     text-align: center;
     justify-self: start;
+    font-size: 2.5vmin;
 }
 #H6_select{
     grid-column-start: 2;
@@ -338,11 +365,12 @@ form{
     grid-row-start: 1;
     grid-row-end: 2;
     justify-self: stretch;
+    font-size: 2.5vmin;
 }
 #H7{
     /*background-color: green;*/
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row-start: 8;
     grid-row-end: 9;
     display: grid;
@@ -360,6 +388,7 @@ form{
     grid-row-end: 2;
     text-align: center;
     justify-self: start;
+    font-size: 2.5vmin;
 }
 #H7_select{
     grid-column-start: 2;
@@ -367,11 +396,12 @@ form{
     grid-row-start: 1;
     grid-row-end: 2;
     justify-self: stretch;
+    font-size: 2.5vmin;
 }
 #total{
     /*background-color: green;*/
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
     grid-row-start: 9;
     grid-row-end: 10;
     display: grid;
@@ -388,6 +418,7 @@ form{
     grid-row-end: 2;
     text-align: center;
     justify-self: center;
+    font-size: 2.5vmin;
 }
 #total_input{
     grid-column-start: 3;
@@ -395,15 +426,21 @@ form{
     grid-row-start: 1;
     grid-row-end: 2;
     justify-self: stretch;
+    font-size: 2.5vmin;
 }
 #submit{
     display: flex;
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
     grid-row-start: 10;
     grid-row-end: 11;
     justify-content: center;
     align-items: center;
+}
+#submit_button{
+    border-radius: 10px;
+    background-color: gray;
+    font-size: 2.5vmin;
 }
 .gap_50{
     width: 50px;
@@ -421,11 +458,11 @@ form{
     color: lightblue;
     padding-top: 10px;
     padding-left: 10px;
-    font-size: 30;
+    font-size: 5vmin;
 }
 #bottom_content{
     color: blue;
-    font-size: 16;
+    font-size: 2.5vmin;
     padding-top: 10px;
     padding-left: 10px;
 }
