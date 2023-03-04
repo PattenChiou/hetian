@@ -12,21 +12,20 @@
     align-content: center;
     position: sticky;
     top: 0;
+    z-index: 1;
+    width: 100%;
 }
 body{
     margin: 0;
     width: 100%;
 }
 .icon{
-    display: flex;
-    height: 100%;
     flex-grow: 1;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
 }
 .icon img{
     height: 100%;
-    width: 100%;
+    margin-left: 1vmin;
 }
 .index{
     flex-grow: 4;
