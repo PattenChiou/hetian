@@ -1,3 +1,13 @@
+$("#index_purchase").click(function (e){
+  e.preventDefault();
+  $("html,body").animate(
+      {
+          scrollTop: 0,
+      },
+      600
+  );
+});
+
 const scriptURL="https://script.google.com/macros/s/AKfycbxRGlLG5yd0ZkvdskDlOHTEeje95PE0BoZavjuf_J1dZjFoFfrAVq_YZsVkDTArixSp/exec"
 const form = document.forms['purchase']
 $("#submit").click(function (e){
